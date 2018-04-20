@@ -1,0 +1,15 @@
+{
+    "name": "selly/selly-php",
+    "description": "PHP library for Selly's API",
+    "type": "library",
+    "keywords": ["selly", "selly.gg", "bitcoin", "ethereum", "paypal", "litecoin", "ripple", "bitcoin cash", "payment", "payment processing"],
+    "require": {
+        "php": "^5.4.0 || ^7.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Selly\\": "src/"
+        }
+    }
+}
