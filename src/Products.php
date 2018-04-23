@@ -17,7 +17,7 @@
         }
 
         public function update($id, $params) {
-            return Client::putRequest('products/'.$id, $params);
+            return Client::putRequest('products/'.$id, ['product' => $params]);
         }
     }
 ?>
