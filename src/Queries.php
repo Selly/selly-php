@@ -8,8 +8,8 @@
             return Client::getRequest('queries/'.$id);
         }
 
-        public function list() {
-            return Client::getRequest('queries/');
+        public function list($page) {
+            return Client::getRequest('queries/', ['page' => $page]);
         }
     }
 ?>

@@ -8,12 +8,16 @@
             return Client::getRequest('coupons/'.$id);
         }
 
-        public function list() {
-            return Client::getRequest('coupons');
+        public function list($page) {
+            return Client::getRequest('coupons', ['page' => $page]);
         }
 
         public function create($params) {
             return Client::postRequest('coupons', $params);
+        }
+
+        public function update($id, $params) {
+            return Client::putRequest('coupons/'.$id, $params);
         }
     }
 ?>

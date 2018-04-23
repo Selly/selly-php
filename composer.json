@@ -2,6 +2,7 @@
     "name": "selly/selly-php",
     "description": "PHP library for Selly's API",
     "type": "library",
+    "version": "1.0.1",
     "keywords": ["selly", "selly.gg", "bitcoin", "ethereum", "paypal", "litecoin", "ripple", "bitcoin cash", "payment", "payment processing"],
     "require": {
         "php": "^5.4.0 || ^7.0",

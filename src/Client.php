@@ -49,6 +49,19 @@
             }
             return json_decode($response->getBody());
         }
+
+        public static function putRequest($path, $params = [], $headers = []) {
+            $endpoint = self::$endpoint;
+            try {
+                $response = self::$client->put("{$endpoint}/{$path}",
+                [
+                    'json' => $params
+                ]);
+            } catch (GuzzleHttp\Exception\ClientException $exception) {
+                return $exception->getResponse()->getBody(true);
+            }
+            return json_decode($response->getBody());
+        }
     }
 
 ?>
