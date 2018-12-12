@@ -30,7 +30,10 @@
         public static function getRequest($path, $params = [], $headers = []) {
             $endpoint = self::$endpoint;
             try {
-                $response = self::$client->get("{$endpoint}/{$path}");
+                $response = self::$client->get("{$endpoint}/{$path}",
+                [
+                    'query' => $params
+                ]);
             } catch (GuzzleHttp\Exception\ClientException $exception) {
                 return $exception->getResponse()->getBody(true);
             }
