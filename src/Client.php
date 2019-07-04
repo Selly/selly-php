@@ -9,7 +9,7 @@
          *
          * @var string
          */
-        protected static $endpoint = 'https://selly.gg/api/v2';
+        protected static $endpoint = 'https://selly.io/api/v2';
 
          /**
          * The Guzzle HTTP client instance
