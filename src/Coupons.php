@@ -19,5 +19,9 @@
         public function update($id, $params) {
             return Client::putRequest('coupons/'.$id, ['coupons' => $params]);
         }
+
+        public function destroy($id, $params = []) {
+            return Client::deleteRequest('coupons/'.$id, $params);
+        }
     }
 ?>
