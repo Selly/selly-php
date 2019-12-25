@@ -2,12 +2,8 @@
     "name": "selly/selly-php",
     "description": "PHP library for Selly's API",
     "type": "library",
-    "version": "1.0.3",
-<<<<<<< HEAD
+    "version": "1.0.4",
     "keywords": ["selly", "selly.io", "ecommerce", "e-commerce"],
-=======
-    "keywords": ["selly", "selly.gg", "bitcoin", "ethereum", "paypal", "litecoin", "ripple", "bitcoin cash", "payment", "payment processing"],
->>>>>>> 003ec01f70826e3d4d8e951976658d511b98b8ec
     "require": {
         "php": "^5.4.0 || ^7.0",
         "guzzlehttp/guzzle": "~6.0"
