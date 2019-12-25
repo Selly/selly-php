@@ -3,21 +3,21 @@
     use GuzzleHttp\Client as Guzzle;
     use RuntimeException;
 
-    class Coupons {
+    class Categories {
         public function get($id) {
-            return Client::getRequest('coupons/'.$id);
+            return Client::getRequest('categories/'.$id);
         }
 
         public function list($page = 1) {
-            return Client::getRequest('coupons', ['page' => $page]);
+            return Client::getRequest('categories', ['page' => $page]);
         }
 
         public function create($params) {
-            return Client::postRequest('coupons', ['coupons' => $params]);
+            return Client::postRequest('categories', $params);
         }
 
         public function update($id, $params) {
-            return Client::putRequest('coupons/'.$id, ['coupons' => $params]);
+            return Client::putRequest('categories/'.$id, $params);
         }
     }
 ?>

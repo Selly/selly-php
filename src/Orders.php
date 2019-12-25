@@ -8,7 +8,7 @@
             return Client::getRequest('orders/'.$id);
         }
 
-        public function list($page) {
+        public function list($page = 1) {
             return Client::getRequest('orders/', ['page' => $page]);
         }
     }
