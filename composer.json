@@ -2,7 +2,7 @@
     "name": "selly/selly-php",
     "description": "PHP library for Selly's API",
     "type": "library",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "keywords": ["selly", "selly.io", "ecommerce", "e-commerce"],
     "require": {
         "php": "^5.4.0 || ^7.0",

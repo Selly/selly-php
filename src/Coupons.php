@@ -13,11 +13,11 @@
         }
 
         public function create($params) {
-            return Client::postRequest('coupons', ['coupons' => $params]);
+            return Client::postRequest('coupons', $params);
         }
 
         public function update($id, $params) {
-            return Client::putRequest('coupons/'.$id, ['coupons' => $params]);
+            return Client::putRequest('coupons/'.$id, $params);
         }
 
         public function destroy($id, $params = []) {
