@@ -10,7 +10,7 @@ Execute:
 
 ## Usage
 
-Visit the [API documentation](https://developer.selly.gg/?php) for complete method lists
+Visit the [API documentation](https://developer.selly.io/?php) for complete method lists
 
 ```php
 <?php
